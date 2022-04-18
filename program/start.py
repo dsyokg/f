@@ -47,11 +47,18 @@ async def _human_time_duration(seconds):
     return ", ".join(parts)
 
 
-@Client.on_message(command("start") & filters.private & ~filters.edited)
+@Client.on_message(
+    command(["start", f"start@{BOT_USERNAME}"]) & filters.private & ~filters.edited
+)
 async def start_(client: Client, message: Message):
     await message.reply_photo(
         photo=f"https://telegra.ph/file/f3bc8cd397d2b6d531f64.jpg",,
-        caption=f"""مرحبا بك في بوت تشغيل الاغاني في المحاداثات الصوتية \n قم باضافة البوت اللي مجموعتك واستمع اللي الموسيقي \n قم باعطاء البوت الصلاحيات المطلوبة وقم بكتابه امر /play لبدا النشغيل
+    await message.reply_text(
+        f"""✨ **مرحبا عزيزي ↤ {message.from_user.mention()} !**\n
+🤖 **[{BOT_NAME}](https://t.me/{BOT_USERNAME}) **
+** يتيح لك تشغيل الموسيقى والفيديو في مجموعات من خلال المكالمات الجديدة في Telegram! **
+💡 ** اكتشف جميع أوامر البوت وكيفية عملها من خلال النقر على زر »📚 الأوامر! **
+🔖 ** لمعرفة كيفية استخدام هذا البوت ، يرجى النقر فوق » زر دليل الاستخدام! **
 """,
         reply_markup=InlineKeyboardMarkup(
             [
