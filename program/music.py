@@ -57,8 +57,8 @@ async def play(c: Client, m: Message):
     keyboard = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton(text="• القائمة", callback_data="cbmenu"),
-                InlineKeyboardButton(text="• إغلاق", callback_data="cls"),
+                InlineKeyboardButton(text="📜┆الــقـائـمـة", callback_data="cbmenu"),
+                InlineKeyboardButton(text="❌┆اغــلاق", callback_data="cls"),
             ]
         ]
     )
@@ -270,8 +270,8 @@ async def stream(c: Client, m: Message):
     keyboard = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton(text="• القائمة", callback_data="cbmenu"),
-                InlineKeyboardButton(text="• اغلاق", callback_data="cls"),
+                InlineKeyboardButton(text="📜┆الــقـائـمـة", callback_data="cbmenu"),
+                InlineKeyboardButton(text="❌┆اغــلاق", callback_data="cls"),
             ]
         ]
     )

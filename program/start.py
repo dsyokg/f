@@ -62,26 +62,26 @@ async def start_(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "• اضفني الى مجموعتك •",
+                        "🔅┆اضـفـني لـمـجـمـوعـتـك",
                         url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
                     )
                 ],
-                [InlineKeyboardButton("• سيزر •", callback_data="cbhowtouse")],
+                [InlineKeyboardButton("✅┆طريـقـة الاسـتـخـدام", callback_data="cbhowtouse")],
                 [
-                    InlineKeyboardButton("• الاوامر •", callback_data="cbbasic"),
-                    InlineKeyboardButton("• المطور •", url=f"https://t.me/{OWNER_NAME}"),
+                    InlineKeyboardButton("🤖┆اوامــر الـبــوت", callback_data="cbbasic"),
+                    InlineKeyboardButton("🧑‍💻┆الـمـطـور", url=f"https://t.me/{OWNER_NAME}"),
                 ],
                 [
                     InlineKeyboardButton(
-                        "• قروب الدعم •", url=f"https://t.me/{GROUP_SUPPORT}"
+                        "⚙️┆جــروب الـدعـم", url=f"https://t.me/{GROUP_SUPPORT}"
                     ),
                     InlineKeyboardButton(
-                        "قناة السورس", url=f"https://t.me/{UPDATES_CHANNEL}"
+                        "🌐┆قـنـاة الــسـورس", url=f"https://t.me/{UPDATES_CHANNEL}"
                     ),
                 ],
                 [
                     InlineKeyboardButton(
-                        "لتنصيب بوت", url="https://t.me/QABNADLIB"
+                        "🐲┆لـتـنـصـيـب بــوت", url="https://t.me/RBBOU"
                     )
                 ],
             ]
@@ -101,9 +101,9 @@ async def alive(client: Client, message: Message):
     keyboard = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton("لتنصيب بوت", url=f"https://t.me/QABNADLIB"),
+                InlineKeyboardButton("🐲┆لـتـنـصـيـب بــوت", url=f"https://t.me/RBBOU"),
                 InlineKeyboardButton(
-                    "قناة السورس", url=f"https://t.me/VFF35"
+                    "🌐┆قـنـاة الــسـورس", url=f"https://t.me/RBBOU"
                 ),
             ]
         ]

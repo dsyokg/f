@@ -15,12 +15,12 @@ from pyrogram.types import (
 
 
 bttn = InlineKeyboardMarkup(
-    [[InlineKeyboardButton("🔙 رجوع", callback_data="cbmenu")]]
+    [[InlineKeyboardButton("♻️┆رجــوع", callback_data="cbmenu")]]
 )
 
 
 bcl = InlineKeyboardMarkup(
-    [[InlineKeyboardButton("🗑 اغلاق", callback_data="cls")]]
+    [[InlineKeyboardButton("❌┆اغــلاق", callback_data="cls")]]
 )
 
 
@@ -46,10 +46,10 @@ async def skip(client, m: Message):
         [
             [
                 InlineKeyboardButton(
-                    text="• القائمة", callback_data="cbmenu"
+                    text="📜┆الــقـائـمـة", callback_data="cbmenu"
                 ),
                 InlineKeyboardButton(
-                    text="• إغلاق", callback_data="cls"
+                    text="❌┆اغــلاق", callback_data="cls"
                 ),
             ]
         ]
@@ -59,7 +59,7 @@ async def skip(client, m: Message):
     if len(m.command) < 2:
         op = await skip_current_song(chat_id)
         if op == 0:
-            await m.reply("❌ قائمة التشغيل فارغه")
+            await m.reply("🗑┆قائـمة التـشـغـيل فـارغـه")
         elif op == 1:
             await m.reply("✅ قوائم الانتظار ** فارغة. ** \n\n** • خروج المستخدم من الدردشة الصوتية ** ")
         elif op == 2:

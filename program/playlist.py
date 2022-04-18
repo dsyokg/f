@@ -15,7 +15,7 @@ from driver.filters import command, other_filters
 
 
 keyboard = InlineKeyboardMarkup(
-    [[InlineKeyboardButton("🗑 إغلاق", callback_data="cls")]]
+    [[InlineKeyboardButton("❌┆اغــلاق", callback_data="cls")]]
 )
 
 

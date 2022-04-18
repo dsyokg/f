@@ -63,8 +63,8 @@ async def vplay(c: Client, m: Message):
     keyboard = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton(text="• القائمة", callback_data="cbmenu"),
-                InlineKeyboardButton(text="• اغلاق", callback_data="cls"),
+                InlineKeyboardButton(text="📜┆الــقـائـمـة", callback_data="cbmenu"),
+                InlineKeyboardButton(text="❌┆اغــلاق", callback_data="cls"),
             ]
         ]
     )
@@ -296,8 +296,8 @@ async def vstream(c: Client, m: Message):
     keyboard = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton(text="• القائمة", callback_data="cbmenu"),
-                InlineKeyboardButton(text="• اغلاق", callback_data="cls"),
+                InlineKeyboardButton(text="📜┆الــقـائـمـة", callback_data="cbmenu"),
+                InlineKeyboardButton(text="❌┆اغــلاق", callback_data="cls"),
             ]
         ]
     )

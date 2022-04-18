@@ -26,26 +26,26 @@ async def cbstart(_, query: CallbackQuery):
             [
                 [
                     InlineKeyboardButton(
-                        "• اضفني الئ مجموعتك •",
+                        "🔅┆اضـفـني لـمـجـمـوعـتـك",
                         url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
                     )
                 ],
-                [InlineKeyboardButton("• طريقة الاستخدام •", callback_data="cbhowtouse")],
+                [InlineKeyboardButton("✅┆طريـقـة الاسـتـخـدام", callback_data="cbhowtouse")],
                 [
-                    InlineKeyboardButton("• الاوامر •", callback_data="cbbasic"),
-                    InlineKeyboardButton("• المطور •", url=f"https://t.me/{OWNER_NAME}"),
+                    InlineKeyboardButton("🤖┆اوامــر الـبــوت", callback_data="cbbasic"),
+                    InlineKeyboardButton("🧑‍💻┆الـمـطـور", url=f"https://t.me/{OWNER_NAME}"),
                 ],
                 [
                     InlineKeyboardButton(
-                        "قروب الدعم", url=f"https://t.me/{GROUP_SUPPORT}"
+                        "⚙️┆جــروب الـدعـم", url=f"https://t.me/{GROUP_SUPPORT}"
                     ),
                     InlineKeyboardButton(
-                        "قناة السورس", url=f"https://t.me/VFF35"
+                        "🌐┆قـنـاة الــسـورس", url=f"https://t.me/VFF35"
                     ),
                 ],
                 [
                     InlineKeyboardButton(
-                        "لتنصيب بوت", url="https://t.me/QABNADLIB"
+                        "🐲┆لـتـنـصـيـب بــوت", url="https://t.me/RBBOU"
                     )
                 ],
             ]
@@ -69,10 +69,10 @@ async def cbguides(_, query: CallbackQuery):
 
  💡 إذا كانت لديك أسئلة  حول هذا البوت ، فيمكنك إخبارنا منن خلال قروب الدعم الخاصة بي هنا ↤ @{GROUP_SUPPORT}
 
- ⚡ ادارة سورس كوبرا @VFF35
+ ⚡ ادارة سورس ريبورتر @VFF35
 __""",
         reply_markup=InlineKeyboardMarkup(
-            [[InlineKeyboardButton("🔙 رجوع", callback_data="cbstart")]]
+            [[InlineKeyboardButton("🔙 رجوع", callback_data="cbcmds")]]
         ),
     )
 
@@ -114,7 +114,7 @@ async def cbbasic(_, query: CallbackQuery):
 » /pause ايقاف التشغيل موقتآ
 » /vmute لكتم البوت
 » /vunmute لرفع الكتم عن البوت
- ⚡ ادارة سورس كوبرا @QABNADLIB
+ ⚡ ادارة سورس ريبورتر @RBBOU
 __""",
         reply_markup=InlineKeyboardMarkup(
             [[InlineKeyboardButton("🔙 الـتـالـي", callback_data="cbadmin")]]
@@ -134,7 +134,7 @@ async def cbadmin(_, query: CallbackQuery):
 » /userbotleave لطرد حساب المساعد 
  » /ping - إظهار حالة البوت بينغ
  » /alive  إظهار معلومات البوت  (في المجموعة)
-  ⚡ ادارة سورس كوبرا @QABNADLIB
+  ⚡ ادارة سورس ريبورتر @RBBOU
 __""",
         reply_markup=InlineKeyboardMarkup(
             [[InlineKeyboardButton("🔙 رجوع", callback_data="cbstart")]]
@@ -153,7 +153,7 @@ async def cbsudo(_, query: CallbackQuery):
 » /restart - restart your bot
 » /leaveall - order userbot to leave from all group
 
- ⚡ ادارة سورس كوبرا @QABNADLIB
+ ⚡ ادارة سورس ريبورتر @RBBOU
 """,
         reply_markup=InlineKeyboardMarkup(
             [[InlineKeyboardButton("🔙 Go Back", callback_data="cbcmds")]]
